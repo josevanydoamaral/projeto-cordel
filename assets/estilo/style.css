@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+    --fonte-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-destaque: 'Passion one', cursive;
+    --fonte-poesia: 'Sriracha', cursive;
+
+    --cor0: black;
+    --cor1: white;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+}
+
+p:hover {
+    text-decoration: underline;
+}
+
+header {
+    height: 250px;
+    background-color: var(--cor0);
+    color: var(--cor1);
+    
+    text-align: center;
+    
+
+}
+
+header h1 {
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 5em;
+    padding-top: 30px
+}
+
+header h1:hover {
+    text-decoration: underline;
+}
+
+header p {
+    font-weight: normal;
+    font-size: 1.2em;
+    
+}
+
+header p > a {
+    color: var(--cor1);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main {
+   
+    
+}
+
+main p {
+    font-family: var(--fonte-poesia);
+    font-size: 2.5em;
+    line-height: 2em;
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+main section.img-fundo {
+    background-color: white;
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#sec2 {
+    background-color: white;
+    background-image: url("../imagens/background002.jpg");
+    background-position: right top;
+}
+
+
+
+footer {
+    background-color: var(--cor0);
+    color: var(--cor1);
+    text-align: center;
+}
+
+footer p {
+    padding: 7px;
+}
