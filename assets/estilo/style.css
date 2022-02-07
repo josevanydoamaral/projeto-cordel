@@ -19,6 +19,7 @@
 }
 
 body {
+    min-height: 100vh;
     font-family: var(--fonte-padrao);
 }
 
@@ -36,10 +37,11 @@ header {
 }
 
 header h1 {
+    font-variant: small-caps;
     font-family: var(--fonte-destaque);
     font-weight: bold;
     font-size: 5em;
-    padding-top: 30px
+    padding-top: 50px
 }
 
 header h1:hover {
@@ -49,6 +51,7 @@ header h1:hover {
 header p {
     font-weight: normal;
     font-size: 1.2em;
+    padding-bottom: 50px;
     
 }
 
@@ -67,7 +70,14 @@ main p {
 }
 
 section {
-    padding: 50px 10px ;
+    padding: 50px 10px;
+    min-height: 700px;
+    
+}
+
+section.img-fundo {
+    box-shadow: inset 3px 2px 9px rgb(0 0 0 / 42%)
+    
 }
 
 section#sec1 {
