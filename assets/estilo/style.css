@@ -18,13 +18,9 @@
     margin: 0px;
 }
 
-body {
+html, body {
     min-height: 100vh;
     font-family: var(--fonte-padrao);
-}
-
-p:hover {
-    text-decoration: underline;
 }
 
 header {
@@ -44,10 +40,6 @@ header h1 {
     padding-top: 50px
 }
 
-header h1:hover {
-    text-decoration: underline;
-}
-
 header p {
     font-weight: normal;
     font-size: 1.2em;
@@ -55,24 +47,26 @@ header p {
     
 }
 
-header p > a {
+header a, footer a {
     color: var(--cor1);
     font-weight: bolder;
     text-decoration: none;
 }
-
-main p {
-    font-family: var(--fonte-poesia);
-    font-size: 2.5em;
-    line-height: 2em;
-    margin-left: 20px;
-    max-width: 500px;
+header > a:hover, footer a:hover {
+    text-decoration: underline;
 }
 
 section {
-    padding: 50px 10px;
-    min-height: 700px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
     
+}
+
+section p {
+    font-family: var(--fonte-poesia);
+    font-size: 2.5em;
+    max-width: 500px;
 }
 
 section.img-fundo {
@@ -94,7 +88,6 @@ section.img-fundo > p {
     
     background: rgba(0, 0, 0, 0.404); 
     color: var(--cor1);
-    padding: 5px;
     margin: 10px;
 }
 
@@ -109,15 +102,5 @@ footer {
 
 footer p {
     padding: 7px;
-    text-decoration: none;
-}
-
-footer > p > a {
-    text-decoration: none;
-    color: var(--cor1);
-    font-weight: bold;
-}
-
-footer > p > a:hover {
     text-decoration: none;
 }

@@ -1,3 +1,5 @@
 text-transform: uppercase
 
+
+as primeiras letras de cada palavra, ficam maiores
 font-variant: small-caps
